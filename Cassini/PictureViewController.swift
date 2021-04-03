@@ -11,7 +11,7 @@ class PictureViewController: UIViewController {
     
     private var imageUrl: URL? {
         didSet {
-            ImageView.image = nil
+            image = nil
             if view.window != nil {
                 
             }
@@ -19,7 +19,24 @@ class PictureViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.addSubview(imageView)
+        }
+    }
+    
+    private var imageView = UIImageView()
+    
+    private var image: UIImage? {
+        get {
+            imageView.image
+        }
+        set {
+            imageView.image = newValue
+            imageView.sizeToFit()
+            scrollView.contentSize = imageView.bounds.size
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +47,7 @@ class PictureViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if ImageView.image == nil {
+        if imageView.image == nil {
             fetchImage()
         }
     }
@@ -39,7 +56,7 @@ class PictureViewController: UIViewController {
         if let url = imageUrl {
             let  urlContents = try? Data(contentsOf: url)
             if let imageData = urlContents {
-                ImageView.image = UIImage(data: imageData)
+                image = UIImage(data: imageData)
             }
         }
     }
