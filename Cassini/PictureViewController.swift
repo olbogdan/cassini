@@ -21,13 +21,6 @@ class PictureViewController: UIViewController {
 
     @IBOutlet weak var ImageView: UIImageView!
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if ImageView.image == nil {
-            fetchImage()
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         if imageUrl == nil {
@@ -35,10 +28,12 @@ class PictureViewController: UIViewController {
         }
     }
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if ImageView.image == nil {
+            fetchImage()
+        }
+    }
     
     func fetchImage() {
         if let url = imageUrl {
