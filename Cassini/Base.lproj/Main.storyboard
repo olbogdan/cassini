@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d7l-Nc-Ezd">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -23,10 +23,10 @@
                         <viewLayoutGuide key="safeArea" id="t1g-Uo-DZN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="KEW-Is-Kfp" secondAttribute="bottom" id="3nh-QP-CXB"/>
-                            <constraint firstItem="KEW-Is-Kfp" firstAttribute="trailing" secondItem="Lsa-50-C6X" secondAttribute="trailing" id="8pL-T5-uNv"/>
-                            <constraint firstItem="KEW-Is-Kfp" firstAttribute="top" secondItem="Lsa-50-C6X" secondAttribute="top" id="Sbg-04-h6l"/>
-                            <constraint firstItem="KEW-Is-Kfp" firstAttribute="leading" secondItem="Lsa-50-C6X" secondAttribute="leading" id="Y8T-6h-aYL"/>
+                            <constraint firstAttribute="bottom" secondItem="KEW-Is-Kfp" secondAttribute="bottom" id="5vL-Bh-Y0G"/>
+                            <constraint firstAttribute="trailing" secondItem="KEW-Is-Kfp" secondAttribute="trailing" id="A6W-Hs-Y9P"/>
+                            <constraint firstItem="KEW-Is-Kfp" firstAttribute="leading" secondItem="Lsa-50-C6X" secondAttribute="leading" id="C2T-Re-e7P"/>
+                            <constraint firstItem="KEW-Is-Kfp" firstAttribute="top" secondItem="Lsa-50-C6X" secondAttribute="top" id="qce-v8-EXj"/>
                         </constraints>
                     </view>
                     <connections>
