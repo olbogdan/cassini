@@ -16,17 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KEW-Is-Kfp">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jho-5N-hf4">
+                                <rect key="frame" x="20" y="0.0" width="374" height="876"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="836" translatesAutoresizingMaskIntoConstraints="NO" id="KEW-Is-Kfp">
+                                        <rect key="frame" x="0.0" y="20" width="374" height="836"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KEW-Is-Kfp" secondAttribute="bottom" constant="20" symbolic="YES" id="92w-ls-dZw"/>
+                                    <constraint firstItem="KEW-Is-Kfp" firstAttribute="top" secondItem="jho-5N-hf4" secondAttribute="top" constant="20" symbolic="YES" id="Ahm-Ve-aKU"/>
+                                    <constraint firstAttribute="trailing" secondItem="KEW-Is-Kfp" secondAttribute="trailing" constant="20" symbolic="YES" id="WzW-wG-jgZ"/>
+                                    <constraint firstItem="KEW-Is-Kfp" firstAttribute="leading" secondItem="jho-5N-hf4" secondAttribute="leading" id="cX0-8M-YtN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0je-LO-NM0"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="wcJ-9O-xbf"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t1g-Uo-DZN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="KEW-Is-Kfp" secondAttribute="bottom" id="5vL-Bh-Y0G"/>
-                            <constraint firstAttribute="trailing" secondItem="KEW-Is-Kfp" secondAttribute="trailing" id="A6W-Hs-Y9P"/>
-                            <constraint firstItem="KEW-Is-Kfp" firstAttribute="leading" secondItem="Lsa-50-C6X" secondAttribute="leading" id="C2T-Re-e7P"/>
-                            <constraint firstItem="KEW-Is-Kfp" firstAttribute="top" secondItem="Lsa-50-C6X" secondAttribute="top" id="qce-v8-EXj"/>
+                            <constraint firstItem="jho-5N-hf4" firstAttribute="top" secondItem="Lsa-50-C6X" secondAttribute="top" id="JCu-KN-8hZ"/>
+                            <constraint firstItem="jho-5N-hf4" firstAttribute="leading" secondItem="Lsa-50-C6X" secondAttribute="leading" constant="20" symbolic="YES" id="mUJ-P7-pzB"/>
+                            <constraint firstAttribute="trailing" secondItem="jho-5N-hf4" secondAttribute="trailing" constant="20" symbolic="YES" id="uly-fa-V0e"/>
+                            <constraint firstAttribute="bottom" secondItem="jho-5N-hf4" secondAttribute="bottom" constant="20" symbolic="YES" id="xTv-kG-Gfm"/>
                         </constraints>
                     </view>
                     <connections>
