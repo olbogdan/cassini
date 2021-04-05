@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PictureViewController: UIViewController {
+class PictureViewController: UIViewController, UIScrollViewDelegate {
     
     private var imageUrl: URL? {
         didSet {
@@ -21,6 +21,9 @@ class PictureViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
+            scrollView.minimumZoomScale = 1/25
+            scrollView.maximumZoomScale = 1.0
+            scrollView.delegate = self
             scrollView.addSubview(imageView)
         }
     }
@@ -36,6 +39,10 @@ class PictureViewController: UIViewController {
             imageView.sizeToFit()
             scrollView.contentSize = imageView.bounds.size
         }
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
     }
     
     override func viewDidLoad() {
