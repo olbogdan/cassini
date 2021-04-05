@@ -74,11 +74,17 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="0je-LO-NM0"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="wcJ-9O-xbf"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mUc-HE-Cqb">
+                                <rect key="frame" x="188.66666666666666" y="456.66666666666669" width="37" height="37"/>
+                                <color key="color" systemColor="linkColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t1g-Uo-DZN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mUc-HE-Cqb" firstAttribute="centerX" secondItem="t1g-Uo-DZN" secondAttribute="centerX" id="9sO-oP-B1S"/>
                             <constraint firstItem="jho-5N-hf4" firstAttribute="top" secondItem="Lsa-50-C6X" secondAttribute="top" id="JCu-KN-8hZ"/>
+                            <constraint firstItem="mUc-HE-Cqb" firstAttribute="centerY" secondItem="t1g-Uo-DZN" secondAttribute="centerY" id="hks-f8-yyp"/>
                             <constraint firstItem="jho-5N-hf4" firstAttribute="leading" secondItem="Lsa-50-C6X" secondAttribute="leading" id="mUJ-P7-pzB"/>
                             <constraint firstAttribute="trailing" secondItem="jho-5N-hf4" secondAttribute="trailing" id="uly-fa-V0e"/>
                             <constraint firstAttribute="bottom" secondItem="jho-5N-hf4" secondAttribute="bottom" id="xTv-kG-Gfm"/>
@@ -86,6 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="jho-5N-hf4" id="r0Y-Sd-uka"/>
+                        <outlet property="spinner" destination="mUc-HE-Cqb" id="ufs-JQ-Wcu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tdg-2w-W8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -127,6 +134,9 @@
         <segue reference="xRV-CH-Ka0"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

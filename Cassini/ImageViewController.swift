@@ -19,6 +19,8 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
             scrollView.minimumZoomScale = 1/25
@@ -38,6 +40,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
             imageView.image = newValue
             imageView.sizeToFit()
             scrollView?.contentSize = imageView.bounds.size
+            spinner?.stopAnimating()
         }
     }
     
@@ -60,6 +63,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func fetchImage() {
+        spinner.startAnimating()
         if let url = imageUrl {
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
                 let  urlContents = try? Data(contentsOf: url)
