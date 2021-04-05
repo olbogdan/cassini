@@ -8,22 +8,19 @@
 import UIKit
 
 class ImageViewController: UIViewController, UIScrollViewDelegate {
-    
     var imageUrl: URL? {
         didSet {
             image = nil
-            if view.window != nil {
-                
-            }
+            if view.window != nil {}
             fetchImage()
         }
     }
 
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet var spinner: UIActivityIndicatorView!
     
-    @IBOutlet weak var scrollView: UIScrollView! {
+    @IBOutlet var scrollView: UIScrollView! {
         didSet {
-            scrollView.minimumZoomScale = 1/25
+            scrollView.minimumZoomScale = 1 / 25
             scrollView.maximumZoomScale = 1.0
             scrollView.delegate = self
             scrollView.addSubview(imageView)
@@ -66,7 +63,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
         spinner.startAnimating()
         if let url = imageUrl {
             DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-                let  urlContents = try? Data(contentsOf: url)
+                let urlContents = try? Data(contentsOf: url)
                 if let imageData = urlContents, url == self?.imageUrl {
                     DispatchQueue.main.async {
                         self?.image = UIImage(data: imageData)
