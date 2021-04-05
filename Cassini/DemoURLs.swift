@@ -14,9 +14,9 @@ struct DemoURLs {
 
     static var NASA: [String: URL] = {
         let NASAURLStrings = [
-            "Cassini": "https://www.jpl.nasa.gov/images/cassini/20090202/pia03883-full.jpg",
-            "Earth": "https://www.nasa.gov/sites/default/files/wave_earth_mosaic_3.jpg",
-            "Saturn": "https://www.nasa.gov/sites/default/files/saturn_collage.jpg"
+            "Cassini": "https://fastly.syfy.com/sites/syfy/files/cassini_finaldives_artwork.jpg",
+            "Earth": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Earth_Western_Hemisphere.jpg",
+            "Saturn": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg"
         ]
         var urls = [String: URL]()
         for (key, value) in NASAURLStrings {
