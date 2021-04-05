@@ -7,9 +7,9 @@
 
 import UIKit
 
-class PictureViewController: UIViewController, UIScrollViewDelegate {
+class ImageViewController: UIViewController, UIScrollViewDelegate {
     
-    private var imageUrl: URL? {
+    var imageUrl: URL? {
         didSet {
             image = nil
             if view.window != nil {
@@ -37,7 +37,7 @@ class PictureViewController: UIViewController, UIScrollViewDelegate {
         set {
             imageView.image = newValue
             imageView.sizeToFit()
-            scrollView.contentSize = imageView.bounds.size
+            scrollView?.contentSize = imageView.bounds.size
         }
     }
     
@@ -47,9 +47,9 @@ class PictureViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if imageUrl == nil {
-            imageUrl = DemoURLs.cassini
-        }
+//        if imageUrl == nil {
+//            imageUrl = DemoURLs.cassini
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

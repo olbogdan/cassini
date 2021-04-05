@@ -10,18 +10,20 @@
 		6861A15C2615337300325097 /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6861A15B2615337300325097 /* DemoURLs.swift */; };
 		6861A15F261533D100325097 /* cassini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6861A15E261533D100325097 /* cassini.jpg */; };
 		6861A162261533E500325097 /* cassini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6861A161261533E500325097 /* cassini.jpg */; };
+		68E1ABE8261BB7F700D6C623 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E1ABE7261BB7F700D6C623 /* CassiniViewController.swift */; };
 		68E2470A2615258F00A31C74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E247092615258F00A31C74 /* AppDelegate.swift */; };
 		68E2470C2615258F00A31C74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2470B2615258F00A31C74 /* SceneDelegate.swift */; };
 		68E247112615258F00A31C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E2470F2615258F00A31C74 /* Main.storyboard */; };
 		68E247132615259100A31C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68E247122615259100A31C74 /* Assets.xcassets */; };
 		68E247162615259100A31C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E247142615259100A31C74 /* LaunchScreen.storyboard */; };
-		68E24720261525DB00A31C74 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2471F261525DB00A31C74 /* PictureViewController.swift */; };
+		68E24720261525DB00A31C74 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2471F261525DB00A31C74 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6861A15B2615337300325097 /* DemoURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
 		6861A15E261533D100325097 /* cassini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cassini.jpg; path = ../../../../Downloads/cassini.jpg; sourceTree = "<group>"; };
 		6861A161261533E500325097 /* cassini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cassini.jpg; path = ../../../Downloads/cassini.jpg; sourceTree = "<group>"; };
+		68E1ABE7261BB7F700D6C623 /* CassiniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 		68E247062615258F00A31C74 /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68E247092615258F00A31C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68E2470B2615258F00A31C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		68E247122615259100A31C74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68E247152615259100A31C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68E247172615259100A31C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68E2471F261525DB00A31C74 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		68E2471F261525DB00A31C74 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				68E2470F2615258F00A31C74 /* Main.storyboard */,
-				68E2471F261525DB00A31C74 /* PictureViewController.swift */,
+				68E1ABE7261BB7F700D6C623 /* CassiniViewController.swift */,
+				68E2471F261525DB00A31C74 /* ImageViewController.swift */,
 				68E247172615259100A31C74 /* Info.plist */,
 				68E2472426152BB900A31C74 /* Supporting Files */,
 				6861A15B2615337300325097 /* DemoURLs.swift */,
@@ -158,7 +161,8 @@
 			files = (
 				6861A15C2615337300325097 /* DemoURLs.swift in Sources */,
 				68E2470A2615258F00A31C74 /* AppDelegate.swift in Sources */,
-				68E24720261525DB00A31C74 /* PictureViewController.swift in Sources */,
+				68E1ABE8261BB7F700D6C623 /* CassiniViewController.swift in Sources */,
+				68E24720261525DB00A31C74 /* ImageViewController.swift in Sources */,
 				68E2470C2615258F00A31C74 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
