@@ -45,13 +45,6 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
         return imageView
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        if imageUrl == nil {
-//            imageUrl = DemoURLs.cassini
-//        }
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if imageView.image == nil {
